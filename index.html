@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cute Kids Website</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: "Comic Sans MS", cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(45deg, #00bcd4, #ffeb3b);
+      min-height: 100vh;
+    }
+    .container {
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-around;
+      gap: 100px 50px;
+      padding: 100px 50px;
+    }
+    .container .card {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+
+      width: 350px;
+      height: 300px;
+      background-color: #fff;
+      border-radius: 20px;
+      transition: 0.5s;
+      box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    }
+    .container .card:hover {
+      height: 400px;
+    }
+    .container .card .imgbox {
+      position: absolute;
+      top: 20px;
+      width: 300px;
+      height: 220px;
+      background: #333;
+      overflow: hidden;
+      border-radius: 12px;
+      transition: 0.5s;
+    }
+    .container .card:hover .imgbox {
+      top: -100px;
+      scale: 0.75;
+      box-shadow: 0 15px 45px rgba(0, 0, 0, 2);
+    }
+
+    .container .card .imgbox img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .container .card .content {
+      position: absolute;
+      top: 252px;
+      width: 100%;
+      padding: 0 30px;
+      height: 35px;
+      overflow: hidden;
+      text-align: center;
+      transition: 0.5s;
+    }
+    .container .card:hover .content {
+      height: 250px;
+      top: 130px;
+    }
+    .container .card .content h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #009688;
+    }
+    .container .card .content p {
+      color: #333;
+    }
+    .container .card .content a {
+      position: relative;
+      top: 15px;
+      display: inline-block;
+      padding: 12px 25px;
+      background: #00bcd4;
+      color: #fff;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="card" style="--clr: var(#009688)">
+        <div class="imgbox"><img src="./img1.jpg" alt="" /></div>
+        <div class="content">
+          <h2>Vegetable Names</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+            vel obcaecati aperiam quae possimus qui fugiat est autem laudantium
+            deleniti!
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="card" style="--clr: var(#ff3e7f)">
+        <div class="imgbox"><img src="./img2.jpg" alt="" /></div>
+        <div class="content">
+          <h2>Shapes Names</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+            vel obcaecati aperiam quae possimus qui fugiat est autem laudantium
+            deleniti!
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+      <div class="card" style="--clr: var(#03a9f4)">
+        <div class="imgbox"><img src="./img3.jpg" alt="" /></div>
+        <div class="content">
+          <h2>Animals Names</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+            vel obcaecati aperiam quae possimus qui fugiat est autem laudantium
+            deleniti!
+          </p>
+          <a href="#">Read More</a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
