@@ -101,8 +101,43 @@
       text-decoration: none;
       border-radius: 8px;
     }
+    .hero {
+      height: 100vh;
+      width: 100%;
+      background-image: url(./cloud.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .highway {
+      height: 350px;
+      width: 500%;
+      display: block;
+      background-image: url(./road.jpg);
+      background-position: absolute;
+      position: absolute;
+      bottom: -78px;
+      left: 0;
+      right: 0;
+      z-index: 1;
+      animation: highway 5s linear infinite;
+      background-repeat: repeat-x;
+    }
+    @keyframes highway {
+      100% {
+        transform: translateX(-3400px);
+      }
+    }
+    .city {
+    }
   </style>
   <body>
+    <div class="hero">
+      <div class="highway"></div>
+      <div class="city"></div>
+    </div>
+
     <div class="container">
       <div class="card" style="--clr: var(#009688)">
         <div class="imgbox"><img src="./img1.jpg" alt="" /></div>
